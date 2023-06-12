@@ -8,9 +8,10 @@ tasks:
     init: > 
       pip install pipx && 
       PIPX_HOME=/workspace/ PIPX_BIN_DIR=/workspace/ pipx install algokit &&
+      /workspace/algokit localnet start &&
       exit
   - name: algokit localnet
-    command: algokit localnet start && exit
+    command: /workspace/algokit localnet start || exit
 vscode:
   extensions:
     - ms-python.python

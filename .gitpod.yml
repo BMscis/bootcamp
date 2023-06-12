@@ -3,7 +3,8 @@ tasks:
     before: >
       echo PATH="$PATH:/workspace" >> ~/.bashrc && 
       echo PIPX_HOME=/workspace/ >> ~/.bashrc &&
-      echo PIPX_BIN_DIR=/workspace/ >> ~/.bashrc
+      echo PIPX_BIN_DIR=/workspace/ >> ~/.bashrc &&
+      exit
   - name: install algokit
     init: > 
       pip install pipx && 
@@ -11,7 +12,7 @@ tasks:
       /workspace/algokit localnet start &&
       exit
   - name: algokit localnet
-    command: /workspace/algokit localnet start || exit
+    command: /workspace/algokit localnet start; exit
 vscode:
   extensions:
     - ms-python.python

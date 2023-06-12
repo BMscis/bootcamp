@@ -1,7 +1,6 @@
 tasks:
   - name: install algokit
     init: > 
-      gp env PATH="$PATH:/workspace" && 
       gp env PIPX_HOME=/workspace/ &&
       gp env PIPX_BIN_DIR=/usr/local/bin &&
       pip install pipx && 

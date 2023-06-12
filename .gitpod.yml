@@ -7,7 +7,7 @@ tasks:
   - name: install algokit
     init: > 
       pip install pipx && 
-      pipx install algokit &&
+      PIPX_HOME=/workspace/ PIPX_BIN_DIR=/workspace/ pipx install algokit &&
       exit
   - name: algokit localnet
     command: algokit localnet start && exit

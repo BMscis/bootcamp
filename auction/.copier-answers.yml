@@ -7,7 +7,7 @@ cloud_provider: none
 contract_name: auction
 ide_vscode: true
 preset_name: starter
-project_name: session_2
+project_name: auction
 python_linter: none
 use_dispenser: false
 use_github_actions: true

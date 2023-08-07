@@ -4,3 +4,4 @@ node_modules/
 session_4/web/src/**/*.js
 *.js.map
 session_4/web/src/beaker/auction_client.ts
+playground
